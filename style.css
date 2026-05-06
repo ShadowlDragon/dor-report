@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+/* tạo wrapper riêng để center */
+.page {
+    width: 794px;
+    min-height: 1123px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+}
+
+/* HEADER TABLE */
+.header-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header-table td {
+    border: 1px solid black;
+    vertical-align: middle;
+}
+
+/* LOGO */
+.logo-cell {
+    width: 120px;
+    text-align: center;
+}
+
+.logo-cell img {
+    width: 90px;
+}
+
+/* TITLE */
+.title-cell {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #6c7ae0;
+}
+
+/* RIGHT INFO */
+.info-cell {
+    width: 220px;
+    padding: 0;
+}
+
+.info-cell table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.info-cell td {
+    border: 1px solid black;
+    padding: 2px 4px;
+}
+
+/* TABLE */
+.section-title {
+    background: #cfe2f3;
+    font-weight: bold;
+    padding: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+td[contenteditable] {
+    background: #fafafa;
+}
+
+/* FLOAT BUTTON */
+.controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    background: white;
+    padding: 10px 15px;
+    border-radius: 12px;
+    
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+button {
+    padding: 10px 14px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: #4a6cf7;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+table {
+    page-break-inside: avoid;
+}
+
+tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+}
+
+.section-title {
+    page-break-after: avoid;
+}

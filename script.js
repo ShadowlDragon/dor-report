@@ -15,7 +15,16 @@ function init() {
         title.innerText = name;
 
         let table = document.createElement("table");
-        table.onclick = () => currentTable = table;
+        table.onclick = (e) => {
+
+            e.stopPropagation();
+
+            currentTable = table;
+
+            document
+                .querySelector(".controls")
+                .classList.add("active");
+        };
 
         table.innerHTML = `
             <tr>
@@ -42,6 +51,25 @@ function init() {
             container.appendChild(block);
     });
 }
+
+document.addEventListener("click", (e) => {
+
+    // nếu click ngoài table + ngoài toolbar
+    if (
+        !e.target.closest("table") &&
+        !e.target.closest(".controls")
+    ) {
+
+        document
+            .querySelector(".controls")
+            .classList.remove("active");
+    }
+
+    document.querySelector(".controls")
+    .addEventListener("click", (e) => {
+        e.stopPropagation();
+    });
+});
 
 // AUTO NUMBER
 function renumber(table) {

@@ -33,6 +33,23 @@ body {
     gap: 12px;
 
     height: fit-content;
+    opacity: 0;
+    pointer-events: none;
+
+    transform:
+        translateY(-50%)
+        translateX(20px);
+
+    transition: all 0.25s ease;
+}
+
+.controls.active {
+    opacity: 1;
+    pointer-events: auto;
+
+    transform:
+        translateY(-50%)
+        translateX(0);
 }
 
 /* BUTTON */

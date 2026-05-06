@@ -33,8 +33,13 @@ function init() {
             `;
         }
 
-        container.appendChild(title);
-        container.appendChild(table);
+        let block = document.createElement("div");
+            block.className = "section-block";
+
+            block.appendChild(title);
+            block.appendChild(table);
+
+            container.appendChild(block);
     });
 }
 

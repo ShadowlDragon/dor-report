@@ -9,6 +9,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -69,23 +71,31 @@
         <!-- FLOAT BUTTON -->
         <div class="controls">
             <button onclick="addRow()">
-                <span class="icon">➕</span>
+                <span class="icon">
+                    <i class="fa-solid fa-plus"></i>
+                </span>
                 <span class="label">Add Row</span>
             </button>
 
             <button onclick="deleteRow()">
-                <span class="icon">➖</span>
+                <span class="icon">
+                    <i class="fa-solid fa-trash"></i>
+                </span>
                 <span class="label">Delete Row</span>
             </button>
 
             <button onclick="clearTable()">
-                <span class="icon">🧹</span>
+                <span class="icon">
+                    <i class="fa-solid fa-broom"></i>
+                </span>
                 <span class="label">Clear Content</span>
             </button>
 
             <button onclick="exportPDF()">
-                <span class="icon">📄</span>
-                <span class="label">Export PDF</span>
+                <span class="icon">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </span>
+                <span class="label">Export to PDF</span>
             </button>
         </div>
     </div>

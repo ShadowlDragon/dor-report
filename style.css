@@ -1,15 +1,15 @@
 body {
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    font-family: Arial;
 }
 
 /* tạo wrapper riêng để center */
 .page {
     width: 794px;
-    min-height: 1123px;
     margin: 20px auto;
     background: white;
-    padding: 20px;
+    box-sizing: border-box;
+    padding: 15px;
 }
 
 /* HEADER TABLE */
@@ -121,4 +121,9 @@ tr {
 
 .section-title {
     page-break-after: avoid;
+}
+
+.section-block {
+    page-break-inside: avoid;
+    break-inside: avoid;
 }
